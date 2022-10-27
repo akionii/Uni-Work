@@ -1,8 +1,8 @@
  /*
  ============================================================================
- Nombre      : Mcm&Mcd.c
- Autor       : Leonardo Acchioni Mena
- Descripción : Minimo comun multiplo y maximo comun divisor en C
+ Nombre           : Mcm&Mcd.c
+ Autor            : Leonardo Acchioni Mena
+ Descripción      : Minimo comun multiplo y maximo comun divisor en C
  ============================================================================
  */
 
@@ -46,7 +46,7 @@ int main() {
     while (resto != 0) {
         numerador   = denominador;
         denominador = resto;
-        resto = numerador % denominador;
+        resto   = numerador % denominador;
     }
     
     // Salvando los valores resultantes en sus variables correspondientes

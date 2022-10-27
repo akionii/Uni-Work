@@ -23,13 +23,19 @@ int main() {
     raiz1 = 0;
     raiz2 = 0;
     
-    // variable temporal
-    float temp;
+    // Variable de parte real y temporal
+    float temp, pReal;
     temp = 0;
     
     // Entrada de datos de las variables a, b y c
     printf("\n Introduzca el valor de a: ");
     scanf("%f", &a);
+    /* Restringiendo el input del usuario para a = 0. 
+    Ya que en ese caso no se estaria resolviendo una ecuacion de segundo grado. */
+    while (a == 0) {
+        printf("\n Introduzca un valor de a distinto de 0: ");
+        scanf("%f", &a);
+    }
     printf(" Introduzca el valor de b: ");
     scanf("%f", &b);
     printf(" Introduzca el valor de c: ");
@@ -57,12 +63,14 @@ int main() {
     
     else if(temp < 0) // Trabajando con valores imaginarios
     {
-        // Primera seccion de la ecuacion salvada en temp [sqrt]
-        temp = sqrt(-temp);
+        // Primera seccion de la ecuacion salvada en temp [sqrt(bˆ2-4)]
+        temp = sqrt(-temp)/(2*a);
+        // Segunda parte de la ecuacion salvada en pReal [-b/2a]
+        pReal = -b/(2*a);
         
         // Mostrando por pantalla los resultados 
-        printf("\n El valor de la primera raiz es : (-%.2f + (%.2f * (i)) / (2 * %.2f)", b, temp, a);
-        printf("\n El valor de la segunda raiz es : (-%.2f - (%.2f * (i)) / (2 * %.2f)", b, temp, a);
+        printf("\n El valor de la primera raiz es : (%.2f + %.2f*(i))", pReal, temp);
+        printf("\n El valor de la segunda raiz es : (%.2f - %.2f*(i))", pReal, temp);
         printf("\n _____________________________________________________________________");
     }
     
