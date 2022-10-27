@@ -35,14 +35,14 @@ int main() {
     printf(" Intrododuzca un segundo numero entero: ");
     scanf("%d", &num2);
     
-    /* [Operaicones] Algoritmo necesario para hallar el minimimo comun multiplo 
-    y el maximo comun divisor */
+    /* Asignando el valor de numerador al la variable con mayor valor y denominador a la menor. 
+    Ademas de calcular el resto de la division entre el numerador y el denominador*/
     numerador = (num1>num2)?num1:num2;
     denominador = (num1<num2)?num1:num2;
     resto = numerador % denominador;
     
     /* Mientras el resto no se igual a cero se actualizará el valor del denominador.
-    Haciendo la división entera entre el numerador y el denominador */
+    Calculando el resto de la división entera entre el numerador y el denominador */
     while (resto != 0) {
         numerador   = denominador;
         denominador = resto;
