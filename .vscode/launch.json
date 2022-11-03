@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": true,
       "externalConsole": false,
-      "cwd": "/Users/leoacchioni/VS Code",
-      "program": "/Users/leoacchioni/VS Code/build/Debug/outDebug",
+      "cwd": "/Users/leoacchioni/Documents/GitHub/Uni Work",
+      "program": "/Users/leoacchioni/Documents/GitHub/Uni Work/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb"
     }
