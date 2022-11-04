@@ -27,9 +27,5 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ],
-  "files.associations": {
-    "fstream": "cpp",
-    "vector": "cpp"
-  }
+  ]
 }
