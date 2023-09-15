@@ -1,133 +1,150 @@
+# Ping-Pong game with turtle module.
+# Done by Sri Manikanta Palakollu.
+# Version - 3.7.0
 
-# Import required library
-import turtle
- 
- 
-# Create screen
-sc = turtle.Screen()
-sc.title("Pong game")
-sc.bgcolor("gray")
-sc.setup(width=1000, height=600)
- 
- 
-# Left paddle
-left_pad = turtle.Turtle()
-left_pad.speed(0)
-left_pad.shape("square")
-left_pad.color("black")
-left_pad.shapesize(stretch_wid=6, stretch_len=2)
-left_pad.penup()
-left_pad.goto(-400, 0)
- 
- 
-# Right paddle
-right_pad = turtle.Turtle()
-right_pad.speed(0)
-right_pad.shape("square")
-right_pad.color("black")
-right_pad.shapesize(stretch_wid=6, stretch_len=2)
-right_pad.penup()
-right_pad.goto(400, 0)
- 
- 
-# Ball of circle shape
-hit_ball = turtle.Turtle()
-hit_ball.speed(1000)
-hit_ball.shape("circle")
-hit_ball.color("Black")
-hit_ball.penup()
-hit_ball.goto(0, 0)
-hit_ball.dx = 5
-hit_ball.dy = -5
- 
- 
-# Initialize the score
-left_player = 0
-right_player = 0
- 
- 
-# Displays the score
-sketch = turtle.Turtle()
-sketch.speed(0)
-sketch.color("Black")
-sketch.penup()
-sketch.hideturtle()
-sketch.goto(0, 260)
-sketch.write("Left_player : 0    Right_player: 0",
-             align="center", font=("Courier", 24, "normal"))
- 
- 
-# Functions to move paddle vertically
-def paddleaup():
-    y = left_pad.ycor()
-    y += 30
-    left_pad.sety(y)
- 
- 
-def paddleadown():
-    y = left_pad.ycor()
-    y -= 30
-    left_pad.sety(y)
- 
- 
-def paddlebup():
-    y = right_pad.ycor()
-    y += 30
-    right_pad.sety(y)
- 
- 
-def paddlebdown():
-    y = right_pad.ycor()
-    y -= 30
-    right_pad.sety(y)
- 
- 
-# Keyboard bindings
-sc.listen()
-sc.onkeypress(paddleaup, "w")
-sc.onkeypress(paddleadown, "s")
-sc.onkeypress(paddlebup, "Up")
-sc.onkeypress(paddlebdown, "Down")
- 
- 
+import turtle as t
+import os
+
+# Score varibales
+
+player_a_score = 0
+player_b_score = 0
+
+win = t.Screen()    # creating a window
+win.title("Ping-Pong Game") # Giving name to the game.
+win.bgcolor('black')    # providing color to the HomeScreen
+win.setup(width=800,height=600) # Size of the game panel 
+win.tracer(0)   # which speed up's the game.
+
+# Creating left paddle for the game
+
+paddle_left = t.Turtle()
+paddle_left.speed(0)
+paddle_left.shape('square')
+paddle_left.color('red')
+paddle_left.shapesize(stretch_wid=5,stretch_len=1)
+paddle_left.penup()
+paddle_left.goto(-350,0)
+
+# Creating a right paddle for the game
+
+paddle_right = t.Turtle()
+paddle_right.speed(0)
+paddle_right.shape('square')
+paddle_right.shapesize(stretch_wid=5,stretch_len=1)
+paddle_right.color('red')
+paddle_right.penup()
+paddle_right.goto(350,0)
+
+# Creating a pong ball for the game
+
+ball = t.Turtle()
+ball.speed(0)
+ball.shape('circle')
+ball.color('yellow')
+ball.penup()
+ball.goto(0,0)
+ball_dx = 1.5   # Setting up the pixels for the ball movement.
+ball_dy = 1.5
+
+# Creating a pen for updating the Score
+
+pen = t.Turtle()
+pen.speed(0)
+pen.color('skyblue')
+pen.penup()
+pen.hideturtle()
+pen.goto(0,260)
+pen.write("Player A: 0                    Player B: 0 ",align="center",font=('Monaco',24,"normal"))
+
+
+# Moving the left Paddle using the keyboard
+
+def paddle_left_up():
+    y = paddle_left.ycor()
+    y = y + 15
+    paddle_left.sety(y)
+
+# Moving the left paddle down
+
+def paddle_left_down():
+    y = paddle_left.ycor()
+    y = y - 15
+    paddle_left.sety(y)
+
+# Moving the right paddle up
+
+def paddle_right_up():
+    y = paddle_right.ycor()
+    y = y + 15
+    paddle_right.sety(y)
+
+# Moving right paddle down
+
+def paddle_right_down():
+    y = paddle_right.ycor()
+    y = y - 15
+    paddle_right.sety(y)
+
+# Keyboard binding
+
+win.listen()
+win.onkeypress(paddle_left_up,"u")
+win.onkeypress(paddle_left_down,"e")
+win.onkeypress(paddle_right_up,"Up")
+win.onkeypress(paddle_right_down,"Down")
+
+
+
+
+# Main Game Loop
+
 while True:
-    sc.update()
- 
-    hit_ball.setx(hit_ball.xcor()+hit_ball.dx)
-    hit_ball.sety(hit_ball.ycor()+hit_ball.dy)
- 
-    # Checking borders
-    if hit_ball.ycor() > 280:
-        hit_ball.sety(280)
-        hit_ball.dy *= -1
- 
-    if hit_ball.ycor() < -280:
-        hit_ball.sety(-280)
-        hit_ball.dy *= -1
- 
-    if hit_ball.xcor() > 500:
-        hit_ball.goto(0, 0)
-        hit_ball.dy *= -1
-        left_player += 1
-        sketch.clear()
-        sketch.write("Left_player : {}    Right_player: {}".format(
-                      left_player, right_player), align="center",
-                      font=("Courier", 24, "normal"))
- 
-    if hit_ball.xcor() < -500:
-        hit_ball.goto(0, 0)
-        hit_ball.dy *= -1
-        right_player += 1
-        sketch.clear()
-        sketch.write("Left_player : {}    Right_player: {}".format(
-                                 left_player, right_player), align="center",
-                                 font=("Courier", 24, "normal"))
- 
-    # Paddle ball collision
-    if (hit_ball.xcor() > 360 and hit_ball.xcor() < 370) and (hit_ball.ycor() < right_pad.ycor()+40 and hit_ball.ycor() > right_pad.ycor()-40):
-        hit_ball.setx(360)
-        hit_ball.dx*=-1
+    win.update() # This methods is mandatory to run any game
+
+    # Moving the ball
+    ball.setx(ball.xcor() + ball_dx)
+    ball.sety(ball.ycor() + ball_dy)
+
+    # setting up the border
+
+    if ball.ycor() > 290:   # Right top paddle Border
+        ball.sety(290)
+        ball_dy = ball_dy * -1
         
-    if (hit_ball.xcor()<-360 and hit_ball.xcor()>-370) and (hit_ball.ycor()<left_pad.ycor()+40 and hit_ball.ycor()>left_pad.ycor()-40):
-        hit_ball.setx(-360)
-        hit_ball.dx*=-1
+    
+    if ball.ycor() < -290:  # Left top paddle Border
+        ball.sety(-290)
+        ball_dy = ball_dy * -1
+        
+
+    if ball.xcor() > 390:   # right width paddle Border
+        ball.goto(0,0)
+        ball_dx = ball_dx * -1
+        player_a_score = player_a_score + 1
+        pen.clear()
+        pen.write("Player A: {}                    Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
+        os.system("afplay wallhit.wav&")
+
+
+
+    if(ball.xcor()) < -390: # Left width paddle Border
+        ball.goto(0,0)
+        ball_dx = ball_dx * -1
+        player_b_score = player_b_score + 1
+        pen.clear()
+        pen.write("Player A: {}                    Player B: {} ".format(player_a_score,player_b_score),align="center",font=('Monaco',24,"normal"))
+        os.system("afplay wallhit.wav&")
+
+
+    # Handling the collisions with paddles.
+
+    if(ball.xcor() > 340) and (ball.xcor() < 350) and (ball.ycor() < paddle_right.ycor() + 40 and ball.ycor() > paddle_right.ycor() - 40):
+        ball.setx(340)
+        ball_dx = ball_dx * -1
+        os.system("afplay paddle.wav&")
+
+    if(ball.xcor() < -340) and (ball.xcor() > -350) and (ball.ycor() < paddle_left.ycor() + 40 and ball.ycor() > paddle_left.ycor() - 40):
+        ball.setx(-340)
+        ball_dx = ball_dx * -1
+        os.system("afplay paddle.wav&")
