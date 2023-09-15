@@ -1,7 +1,4 @@
 from cprint import cprint
-import os
-
-# Program to make a simple calculator
 
 # This function adds two numbers
 def add(x, y):
@@ -19,7 +16,9 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-cprint(''' /$$$$$$$              /$$     /$$                                                      
+while True:
+    
+    cprint(''' /$$$$$$$              /$$     /$$                                                      
 | $$__  $$            | $$    | $$                                                      
 | $$  \ $$ /$$   /$$ /$$$$$$  | $$$$$$$   /$$$$$$  /$$$$$$$                             
 | $$$$$$$/| $$  | $$|_  $$_/  | $$__  $$ /$$__  $$| $$__  $$                            
@@ -38,28 +37,26 @@ cprint(''' /$$$$$$$              /$$     /$$
 | $$    $$ /$$__  $$| $$| $$      | $$  | $$| $$ /$$__  $$  | $$ /$$| $$  | $$| $$      
 |  $$$$$$/|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/| $$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$      
  \______/  \_______/|__/ \_______/ \______/ |__/ \_______/   \___/   \______/ |__/      
-                                                                                                                                                   
-                                                                                        
 
 ''',c='r')
-
-# Operator List
-opList = [
-"   1.Add",
-"   2.Subtract",
-"   3.Multiply",
-"   4.Divide"]
-
-cprint("LIST OF OPERATORS.", c='g')
-cprint(
-    opList[0] + "\n" +
-    opList[1] + "\n" +
-    opList[2] + "\n" +
-    opList[3],
-    c = "b"
-)
-
-while True:
+    
+    # Operator List
+    opList = [
+    "   1.Add [+]",
+    "   2.Subtract [-]",
+    "   3.Multiply [*]",
+    "   4.Divide [/]"]
+    
+    print("\n")
+    cprint("LIST OF OPERATORS.", c='g')
+    cprint(
+        opList[0] + "\n" +
+        opList[1] + "\n" +
+        opList[2] + "\n" +
+        opList[3],
+        c = "b"
+    )
+    
     # take input from the user
     print("\n")
     cprint("Enter operator of choice (1,2,3,4): ", c='g')
@@ -68,37 +65,40 @@ while True:
 
     # check if choice is one of the four options
     if choice in ('1','2','3','4'):
-        cprint("Enter first value: ", c='b')
+        cprint("Enter first value: ", c='g')
         num1 = float(input(""))
-        cprint("Enter second value: ", c='b')
+        cprint("Enter second value: ", c='g')
         num2 = float(input(""))
-
+        print("\n")
+        
         if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
+            cprint(num1, "+", num2, "=", add(num1, num2), c = "y")
 
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+            cprint(num1, "-", num2, "=", subtract(num1, num2), c = "y")
 
         elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
+            cprint(num1, "*", num2, "=", multiply(num1, num2), c = "y")
 
         elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+            cprint(num1, "/", num2, "=", divide(num1, num2), c = "y")
         
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = ''
         while (next_calculation != 'n'):
             print("\n")
-            next_calculation = input("Do you wish to continue using Python Calculator? (y/n): ")
+            cprint("Do you wish to continue using Python Calculator? (y/n): ", c = "g")
+            next_calculation = input("")
             if next_calculation in ('y','n'):
                 if next_calculation == "y":
+                    print("\n"*100)
                     break
             else:
                 print("\n"*100)
                 cprint("Invalid Input", c = "r")
         else:
-            print("Goodbye. See you soon!")
+            cprint("Goodbye. See you soon!", c = "y")
             break
             
     else:
