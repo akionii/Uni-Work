@@ -1,4 +1,5 @@
 from cprint import cprint
+import os
 
 # This function adds two numbers
 def add(x, y):
@@ -38,7 +39,7 @@ while True:
 |  $$$$$$/|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/| $$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$      
  \______/  \_______/|__/ \_______/ \______/ |__/ \_______/   \___/   \______/ |__/      
 
-''',c='r')
+''',c='b')
     
     # Operator List
     opList = [
@@ -92,15 +93,18 @@ while True:
             next_calculation = input("")
             if next_calculation in ('y','n'):
                 if next_calculation == "y":
-                    print("\n"*100)
+                    # Clearing the Screen
+                    os.system('cls')
                     break
             else:
-                print("\n"*100)
+                # Clearing the Screen
+                os.system('cls')
                 cprint("Invalid Input", c = "r")
         else:
             cprint("Goodbye. See you soon!", c = "y")
             break
             
     else:
-        print("\n"*100)
+        # Clearing the Screen
+        os.system('cls')
         cprint("Invalid Input", c = "r")

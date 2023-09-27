@@ -1,5 +1,5 @@
 # Count Down Commence
-count = 1000
+count = -1
 
 # While loop defining end of count down on 'count = 0'
 while (count < 0):

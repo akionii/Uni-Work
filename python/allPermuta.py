@@ -43,8 +43,5 @@ if __name__ == "__main__":
      
     print("\nAll char used")
     set2 = ['a', 'b' , 'c', 'd', 'e', 'f', 'h', 'g', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] 
-    k = 1
+    k = 0
     printAllKLength(set2, k)
- 
-# This code is contributed
-# by ChitraNayal
