@@ -8,7 +8,7 @@ int main()
     for (int i = 0; i <= 9; i++)
     {
         list[i] = rand();
-        cout << "The random generated number in the position: " << i + 1 << " is equal to " << list[i] << endl;
+        cout << "The random generated number in position: " << i + 1 << " is equal to " << list[i] << endl;
     }
     return 0;
 }
