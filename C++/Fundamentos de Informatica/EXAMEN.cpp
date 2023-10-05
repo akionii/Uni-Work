@@ -5,10 +5,10 @@ using namespace std;
 
 int main()
 {
-	/* Se supone que las medidas vienen en centimetros SIN decimales.
-	Por ello se usa el tipo de variable int. */
-	int pi = 3.14159;
-	int diametro, revoluciones, perimetro, distancia_recorrida;
+	/* Se supone que las medidas introducidas por el usuario vienen en centimetros SIN decimales.
+	Por ello se usan los tipos de variable int y double. */
+	int diametro, revoluciones;
+	float perimetro, distancia_recorrida, pi = 3.14159;
 
 	// Le pedimos al usuario los valores necesarios.
 	cout << "Introduzca el diametro de la rueda y el numero de revoluciones por minuto: " << endl;
