@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/admin/Documents/Fundamentos de Informatica",
-      "program": "c:/Users/admin/Documents/Fundamentos de Informatica/build/Debug/outDebug",
+      "cwd": "c:/Users/admin/Documents/GitHub/Uni-Work/C++/Fundamentos de Informatica",
+      "program": "c:/Users/admin/Documents/GitHub/Uni-Work/C++/Fundamentos de Informatica/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

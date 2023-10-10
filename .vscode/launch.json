@@ -6,12 +6,19 @@
       "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "stopAtEntry": true,
-      "externalConsole": false,
-      "cwd": "/Users/leoacchioni/Documents/GitHub/Uni Work",
-      "program": "/Users/leoacchioni/Documents/GitHub/Uni Work/build/Debug/outDebug",
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb"
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
