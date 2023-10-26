@@ -1,4 +1,4 @@
-# Computer Engineering Degree
+# 💻 Software Engineering 📚🎓 Degree
 
 ## Project Description
 
