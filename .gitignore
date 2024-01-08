@@ -1,0 +1,233 @@
+# OS and Editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+vendor/
+
+# Compiled files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Compiled C++ files
+*.out
+
+# Compiled Java files
+*.class
+
+# Compiled C# files
+bin/
+obj/
+
+# Compiled Ruby files
+*.gem
+*.rbc
+*.rbo
+*.rbs
+
+# Temporary files
+*.swp
+*~
+*.bak
+*.backup
+*.save
+
+# Environment-specific files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Linux
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Java
+*.class
+*.war
+*.ear
+hs_err_pid*
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Eclipse
+bin/
+target/
+.settings/
+.classpath
+.project
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio
+*.suo
+*.user
+*.suo
+*.user
+*.sln.docstates
+
+# Android
+build/
+bin/
+gen/
+local.properties
+
+# Gradle
+.gradle/
+/build/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log

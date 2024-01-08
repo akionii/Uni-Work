@@ -1,8 +1,10 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 // Function to encrypt a message and generate a key
-void encryptMessage(std::string &message, const std::string &key)
+void encryptMessage(string &message, const string &key)
 {
     size_t messageLen = message.length();
     size_t keyLen = key.length();
@@ -14,7 +16,7 @@ void encryptMessage(std::string &message, const std::string &key)
 }
 
 // Function to decrypt a message using the provided key
-void decryptMessage(std::string &message, const std::string &key)
+void decryptMessage(string &message, const string &key)
 {
     size_t messageLen = message.length();
     size_t keyLen = key.length();
@@ -27,31 +29,31 @@ void decryptMessage(std::string &message, const std::string &key)
 
 int main()
 {
-    std::string message;
-    std::string key;
+    string message;
+    string key;
 
-    std::cout << "Enter a message: ";
-    std::getline(std::cin, message);
+    cout << "Enter a message: ";
+    getline(cin, message);
 
-    std::cout << "Enter a key for encryption: ";
-    std::getline(std::cin, key);
+    cout << "Enter a key for encryption: ";
+    getline(cin, key);
 
     // Encrypt the message
-    std::string encryptedMessage = message;
+    string encryptedMessage = message;
     encryptMessage(encryptedMessage, key);
 
-    std::cout << "Encrypted message: " << encryptedMessage << std::endl;
+    cout << "Encrypted message: " << encryptedMessage << endl;
 
-    std::cout << "\nEnter encrypted message: ";
-    std::getline(std::cin, encryptedMessage);
+    cout << "\nEnter encrypted message: ";
+    getline(cin, encryptedMessage);
 
-    std::cout << "Enter the key: ";
-    std::getline(std::cin, key);
+    cout << "Enter the key: ";
+    getline(cin, key);
 
     // Decrypt the message
     decryptMessage(encryptedMessage, key);
 
-    std::cout << "Decrypted message: " << encryptedMessage << std::endl;
+    cout << "Decrypted message: " << encryptedMessage << endl;
 
     return 0;
 }

@@ -1,38 +1,98 @@
-# 💻 Software Engineering 📚🎓 Degree
+# Software Engineering Degree Projects 🚀
 
-## Project Description
+This repository contains the projects and coursework completed during my pursuit of a Software Engineering degree. The projects are organized by programming language and cover a variety of topics and concepts studied throughout the academic program.
 
-Provide a brief overview of your project, including its purpose and goals. Mention what problem your project aims to solve and why it's important.
+## 📋 Table of Contents
 
-## Table of Contents
+- [C](#c)
+  - [🧮 Calc](#-calc)
+  - [🔄 GCD & LCM](#-gcd--lcm)
+  - [⤴⤵ Max & Min Values](#-max--min-values)
+  - [⚡ Power Calculator](#-power-calculator)
+  - [📉 2nd Degree Equation](#-2nd-degree-equation)
+- [C++](#c-1)
+  - [🖥️ Fundamentos de Informatica](#️-fundamentos-de-informatica)
+  - [📜 Logs](#-logs)
+- [PHP](#php)
+- [Python](#python)
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
+## 🅒 C
 
-## Features
+### 🧮 Calc
 
-List the main features and functionalities of your project.
+- Basic calculator implementation in C.
+- Files:
+  - `Calc/Calc`: Executable for the calculator.
+  - `Calc/calc.c`: Source code for the calculator.
 
-- Feature 1
-- Feature 2
-- ...
+### 🔄 GCD & LCM
 
-## Getting Started
+- Implementation of GCD (Greatest Common Divisor) and LCM (Least Common Multiple) in multiple languages.
+- Files:
+  - `GCD & LCM/en/Gcd&Lcm`: Executable for GCD & LCM in English.
+  - `GCD & LCM/en/Gcd&Lcm.c`: Source code for GCD & LCM in English.
+  - `GCD & LCM/es/Mcm&Mcd`: Executable for MCM & MCD in Spanish.
+  - `GCD & LCM/es/Mcm&Mcd.c`: Source code for MCM & MCD in Spanish.
 
-Explain how to get started with your project. Provide step-by-step instructions that can help users set up and run your project locally.
+### ⤴⤵ Max & Min Values
 
-## Prerequisites
+- Implementation to find the maximum and minimum values in C.
+- Files:
+  - `Max & Min Values/maxVal`: Executable for finding max and min values.
+  - `Max & Min Values/maxVal.c`: Source code for finding max and min values.
 
-List any software, hardware, or dependencies that are required to run your project. Include version numbers if applicable.
+### ⚡ Power Calculator
 
-## Installation
+- Implementation of a power calculator in C.
+- Files:
+  - `Power Calculator/pow`: Executable for the power calculator.
+  - `Power Calculator/pow.c`: Source code for the power calculator.
 
-Provide detailed installation instructions. This should cover everything from setting up the development environment to installing necessary libraries or packages.
+### 📉 2nd Degree Equation
 
-```bash
-# Example installation commands
-$ https://github.com/akionii/Uni-Work.git
-$ cd Uni-Work
-$ pip install -r requirements.txt
+- Implementation of a second-degree equation solver in multiple languages.
+- Files:
+  - `2nd Degree Equation/eng/2DegEq`: Executable for the English version.
+  - `2nd Degree Equation/eng/2DegEq.c`: Source code for the English version.
+  - `2nd Degree Equation/es/Ec2Deg`: Executable for the Spanish version.
+  - `2nd Degree Equation/es/Ec2Deg.c`: Source code for the Spanish version.
+
+## ➕➕ C++
+
+### 🖥️ Fundamentos de Informatica
+
+- Various C++ projects related to Fundamentos de Informatica.
+  - `Fundamentos de Informatica/Calculadora.cpp`: Source code for the calculator.
+  - `Fundamentos de Informatica/crypt.cpp`: Source code for cryptography implementation.
+  - `Fundamentos de Informatica/EXAMEN.cpp`: Source code for the exam project.
+  - ...
+
+### 📜 Logs
+
+- Implementation of logging in C++.
+- Files:
+  - `Logs/Log`: Executable for the logging implementation.
+  - `Logs/Log.cpp`: Source code for logging.
+
+## 🐘 PHP
+
+- PHP files related to web development coursework.
+- Files:
+  - `php/class-db.php`: PHP class for database operations.
+  - `php/login.php`: PHP script for user login.
+  - `php/logout.php`: PHP script for user logout.
+  - `php/myaccount.php`: PHP script for user account information.
+
+## 🐍 Python
+
+- Python scripts and projects.
+- Files:
+  - `python/allPermuta.py`: Python script for generating all permutations.
+  - `python/BMW.py`: Python script to make a BMW logo.
+  - `python/Brute Force/`: Brute force password cracking implementation.
+  - `python/calc.py`: Python script for basic calculations.
+  - `python/pongChong.py`: Python script for Pong game.
+  - `python/quiz.py`: Python script for a quiz.
+  - `python/snakeBruv.py`: Python script for a snake game.
+  - `python/susCD.py`: Python script for CD drive-related operations.
+  - ...
