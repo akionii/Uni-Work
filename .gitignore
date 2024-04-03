@@ -72,9 +72,6 @@ obj/
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# Visual Studio Code
-.vscode/
-
 # macOS
 .DS_Store
 .AppleDouble
@@ -93,43 +90,6 @@ obj/
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# VS Code directories
-.vscode/
-.history/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# JetBrains
-.idea/
-
-# User-specific files
-*.suo
-*.user
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Mono Auto Generated Files
-mono_crash.*
 
 # Windows image file caches
 Thumbs.db

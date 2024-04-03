@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : pow.c
- Author      : Leonardo Acchioni Mena
- Version     : 1.0
- Copyright   : N.A
- Description : Power Calculator, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <math.h>
 

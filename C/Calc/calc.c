@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : calc.c
- Author      : Leonardo Acchioni Mena
- Version     : 1.0
- Copyright   : N/A
- Description : Calculator in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 
 int main() {

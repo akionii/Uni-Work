@@ -1,11 +1,3 @@
- /*
- ============================================================================
- Nombre        : Ec2Deg.c
- Autor         : Leonardo Acchioni Mena
- Descripción   : Ecuación de segundo grado en C
- ============================================================================
- */
-
 #include<stdio.h>
 #include<math.h>
  

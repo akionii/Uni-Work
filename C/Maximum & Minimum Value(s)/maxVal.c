@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : maxVal.c
- Author      : Leonardo Acchioni Mena
- Version     : 1.0
- Copyright   : N/A
- Description : Find max & min value, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 

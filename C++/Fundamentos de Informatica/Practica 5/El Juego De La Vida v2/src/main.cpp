@@ -77,12 +77,15 @@ int main()
     int poblacion[MAX_FILAS][MAX_COLUMNAS] = {0};
 
     // Llenar la población inicial con los bichos proporcionados
+    cout << "\ninicializarPoblacion:\n";
+
     inicializarPoblacion(poblacion, bichos);
 
     // Mostrar el estado inicial de la población
     cout << "\nEstado Inicial:\n";
     mostrarEstado(poblacion, filas, columnas);
 
+    cout << "\nsimularCiclos:\n";
     // Simular la evolución de la población durante el número de ciclos especificado
     simularCiclos(poblacion, filas, columnas, ciclos);
 

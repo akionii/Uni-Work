@@ -1,11 +1,3 @@
- /*
- ============================================================================
- Nombre           : Mcm&Mcd.c
- Autor            : Leonardo Acchioni Mena
- Descripción      : Minimo comun multiplo y maximo comun divisor en C
- ============================================================================
- */
-
 #include <stdio.h>
  
 int main() {

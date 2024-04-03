@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : Log.cpp
-// Author      : Leonardo Acchioni Mena
-// Version     : 1.0
-// Copyright   : N/A
-// Description : Log In / Register C++, Ansi-style
-//============================================================================
-
 #include <iostream>
 #include <fstream> // reading and writing files
 #include <string>
