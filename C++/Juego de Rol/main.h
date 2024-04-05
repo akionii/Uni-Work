@@ -12,6 +12,8 @@ class jugador{
         jugador();
         void getNombre();
         float getVida();
+        float getatk();
+        void setvidaatk();
 };
 
 class partida{
