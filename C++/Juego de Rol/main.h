@@ -12,15 +12,26 @@ class jugador{
         jugador();
         void getNombre();
         float getVida();
-        float getatk();
-        void setvidaatk();
+        float getAtk();
+        void setVidaatk();
+        void activarPoder();
+        void getAtk(float danho);
+        string toString();
 };
 
 class partida{
     private:
     class jugador;
+    bool turno_jugador_1;
+    bool Partida_en_curso;
+    void mostrarPartida();
     public:
-    ;
+    partida();
+    partida(jugador Jugador);
+    void setJugador1(jugador Jugador1);
+    void setJugador2(jugador Jugador2);
+    void empezarPartida();
+    bool accionSeleccionada(int accion);
 };
 
 class stats{
@@ -30,5 +41,5 @@ class stats{
         float atk;
 
     public:
-
+        stats();
 };
