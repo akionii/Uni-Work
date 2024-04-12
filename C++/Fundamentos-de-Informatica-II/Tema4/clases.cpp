@@ -1,20 +1,17 @@
 #include "clases.h"
 
-// Implementación de Persona
-Persona::Persona(string nombre, float salario) : nombre(nombre), salario(salario) {}
-Persona::~Persona() {}
-
-string Persona::getNombre() const
+// Implementación Getters
+string Persona::getNombre()
 {
     return nombre;
 }
 
-float Persona::getSalario() const
+float Persona::getSalario()
 {
     return salario;
 }
 
-string Persona::toString() const
+string Persona::toString()
 {
     return "Nombre: " + nombre + ", Salario: " + to_string(salario);
 }
@@ -32,7 +29,7 @@ Player::Player(string nombre, float salario, int num, int s[3]) : Persona(nombre
         stats[i] = s[i];
 }
 
-int Player::getNumero() const
+int Player::getNumero()
 {
     return numero;
 }
@@ -59,9 +56,9 @@ void Player::setSalario(float base)
     salario = base * (media / 100.0);
 }
 
-string Player::toString() const
+string Player::toString()
 {
-    return Persona::toString() + ", Número: " + to_string(numero);
+    return Persona::toString() + ", Numero: " + to_string(numero);
 }
 
 // Implementación de Manager
@@ -85,7 +82,7 @@ void Manager::setSalario(float base)
     salario = base * (1 + rating);
 }
 
-string Manager::toString() const
+string Manager::toString()
 {
     return Persona::toString() + ", Partidos: " + to_string(nro_de_partidos) + ", Rating: " + to_string(rating);
 }
@@ -99,9 +96,9 @@ EquipoDeFutbol::EquipoDeFutbol(string n, Player js[11], Manager m, int pj, int p
     }
 }
 
-string EquipoDeFutbol::getAlineacion() const
+string EquipoDeFutbol::getAlineacion()
 {
-    string alineacion = "Alineación de " + nombre + ":\n";
+    string alineacion = "Alineacion de " + nombre + ":\n";
     for (int i = 0; i < 11; i++)
     {
         alineacion += jugadores[i].toString() + "\n";
@@ -110,12 +107,14 @@ string EquipoDeFutbol::getAlineacion() const
     return alineacion;
 }
 
-long double EquipoDeFutbol::getSalarioClub() const
+long double EquipoDeFutbol::getSalarioClub()
 {
     long double totalSalario = manager.getSalario();
-    for (const auto &jugador : jugadores)
+    int numJugadores = 11;
+
+    for (int i = 0; i < numJugadores; i++)
     {
-        totalSalario += jugador.getSalario();
+        totalSalario += jugadores[i].getSalario();
     }
     return totalSalario;
 }
@@ -128,7 +127,7 @@ void EquipoDeFutbol::modificarEstadisticas(bool partidoGanado)
     manager.modificarRating(partidoGanado);
 }
 
-string EquipoDeFutbol::toString() const
+string EquipoDeFutbol::toString()
 {
     return "Equipo: " + nombre + ", Partidos Jugados: " + to_string(partidos_jugados) + ", Partidos Ganados: " + to_string(partidos_ganados);
 }
