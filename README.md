@@ -31,7 +31,7 @@ A power calculator programmed in C.
 
 Solutions to second-degree equations implemented in different programming languages.
 
-### C++
+### C++ (me cago en cpp)
 
 #### Fundamentos de Informatica
 
