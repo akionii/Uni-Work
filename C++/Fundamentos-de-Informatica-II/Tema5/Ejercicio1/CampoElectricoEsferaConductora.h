@@ -9,7 +9,7 @@ private:
 public:
     CampoElectricoEsferaConductora();
     CampoElectricoEsferaConductora(float radio_esfera, float carga, float *posicion, string nombre);
-    void calcularIntensidad(float *posicion);
+    float calcularIntensidad(float *posicion);
     float *calcularCampo(float *posicion);
     virtual string toString();
 };

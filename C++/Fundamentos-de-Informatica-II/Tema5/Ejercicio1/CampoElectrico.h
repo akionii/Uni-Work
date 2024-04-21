@@ -10,7 +10,7 @@ protected:
 
 public:
     CampoElectrico();
-    CampoElectrico(float carga, float *posicion, string nomrbe);
+    CampoElectrico(float carga, float *posicion, string nombre);
     float calcularIntensidad(float *posicion);
     float *calcularDireccion(float *posicion);
     float getCarga();

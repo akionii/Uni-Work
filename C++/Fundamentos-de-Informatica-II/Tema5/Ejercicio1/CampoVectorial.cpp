@@ -2,7 +2,7 @@
 
 CampoVectorial::CampoVectorial()
 {
-    nombre = "Campo0";
+    nombre = "CampoVectorial0";
 }
 
 CampoVectorial::CampoVectorial(string nombre)
