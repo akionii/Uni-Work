@@ -29,7 +29,7 @@ float CampoElectricoEsferaConductora::calcularIntensidad(float *posicion)
 
 float *CampoElectricoEsferaConductora::calcularCampo(float *posicion)
 {
-    float *campo = new float[2]; // Allocate new memory for each call
+    float *campo = new float[2];
     float distancia = dist(this->posicion, posicion);
 
     if (distancia < radio_esfera)
@@ -44,7 +44,7 @@ float *CampoElectricoEsferaConductora::calcularCampo(float *posicion)
         campo[1] = direccion[1];
     }
 
-    return campo; // Remember to manage this memory in the calling code or use smart pointers
+    return campo;
 }
 
 string CampoElectricoEsferaConductora::toString()
