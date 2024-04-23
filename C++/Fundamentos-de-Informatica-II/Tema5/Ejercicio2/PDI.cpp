@@ -2,47 +2,54 @@
 #include "Investigador.h"   
 #include "Profesor.h"
 
-//Mirar primera descripcion del PDI
-
-double PDI:: getMediaAnnyiosExperiencia(){
-    double Total = Profesor::getAnyiosExperiencia() + Investigador::getAnyosExperiencia();
-
-    return Total/2;
+PDI::PDI(string DNI, string m_Nombre, string apellidos, int edad, string institucionProfesor, int anyioInicioProfesor, int orcid, string areaConocimiento, string institucionInvestigador, int anyioInicioInvestigador, int identificador)
+    : Profesor{ DNI, m_Nombre, apellidos, edad , institucionProfesor, anyioInicioProfesor },
+      Investigador{ orcid, areaConocimiento, institucionInvestigador, anyioInicioInvestigador },
+      m_Identificador{ identificador }
+{
 }
 
-void PDI::actualizacionInstitucion(string inst){
-    Profesor::institucion = inst;
-    Investigador::institucion = inst;
+//PDI::PDI(const Profesor& otro)
+//{
+//}
+//
+//PDI& PDI::operator=(const Profesor& otro)
+//{
+//}
+
+double PDI::getMediaAnyiosExperiencia() const {
+    double suma = static_cast<double>(Profesor::getAnyosExperiencia() + Investigador::getAnyosExperiencia());
+    return suma / 2;
 }
 
+void PDI::actualizacionInstitucion(string inst) {
+    Profesor::m_Institucion = inst;
+    Investigador::m_Institucion = inst;
+}
 
-void PDI::getAreaDocencia(){
+string PDI::getAreaDocencia() {
     string area;
-    cout << "Introduce la docencia: ";
+    cout << "Introduce la Docencia: ";
     cin >> area;
-    cout << "Area de Docencia: " << area << "\n";
+    return area;
 }
 
-bool PDI::elMasVeterano(PDI *objPDI){
-    double mediaActual = getMediaAnnyiosExperiencia();
-    double mediaOtro = objPDI->getMediaAnnyiosExperiencia();
+bool PDI::elMasVeterano(PDI* objPDI) const {
+    double mediaActual = getMediaAnyiosExperiencia();
+    double mediaOtro = objPDI->getMediaAnyiosExperiencia();
 
-    if(mediaActual > mediaOtro){
+    if (mediaActual > mediaOtro) {
         return true;
-    } else if(mediaActual==mediaOtro){
-        return getAnyosExperiencia() > objPDI->getAnyosExperiencia();//mirar
-    } else {
-        return false;
     }
+    
+    if (mediaActual == mediaOtro) {
+        return Profesor::getAnyosExperiencia() > objPDI->Profesor::getAnyosExperiencia();
+    }
+
+    return false;
 }
 
-string PDI::toString(){
+string PDI::toString() const {
     string salida = Profesor::toString() + "\n" + Investigador::toString();
     return salida;
 }
-
-//PDI& PDI::operator=(const Profesor& otro) {
-//    Profesor::operator=(otro);
-//    this->
-//    return *this;
-//}

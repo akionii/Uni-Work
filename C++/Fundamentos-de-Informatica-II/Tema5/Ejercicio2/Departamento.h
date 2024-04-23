@@ -1,27 +1,22 @@
- #pragma once
- #include "PDI.h"
+#pragma once
+#include "PDI.h"
 
- class Departamento: public PDI{
-    private:
+class Departamento {
+private:
+    string m_Nombre;
+    int m_NumMax;
+    PDI* PDIs;
+    int siguentePos;
 
-    string nombre;
-    int numMax;
-    PDI *pdis;
-    int primeraPosicionLibre;
-   
-
-    public:
-    
-    Departamento(string &nombre, int numMax);
-    string getNombre();
-    int getNumMax();
-    void setNombre(string nombre);
+public:
+    Departamento(string m_Nombre, int numMax);
+    string getNombre() const;
+    int getNumMax() const;
+    void setNombre(string m_Nombre);
     void setNumMax(int numMax);
     void insertar(PDI& pdi);
     void visualizar();
-    
 
+    int getNumPDI() const;
+};
 
-
-    
- };

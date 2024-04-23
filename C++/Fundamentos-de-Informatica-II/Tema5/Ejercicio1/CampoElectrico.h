@@ -11,8 +11,8 @@ protected:
 public:
     CampoElectrico();
     CampoElectrico(float carga, float *posicion, string nombre);
-    float calcularIntensidad(float *posicion) override;
-    float *calcularDireccion(float *posicion) override;
+    float calcularIntensidad(float *posicion)override;
+    float *calcularDireccion(float *posicion)override;
     float getCarga();
     void setCarga(float carga);
     virtual string toString();

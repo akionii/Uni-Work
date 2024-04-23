@@ -10,13 +10,13 @@ CampoVectorial::CampoVectorial(string nombre)
     this->nombre = nombre;
 }
 
-float CampoVectorial::calcularIntensidad(float *posicion)
-{
-}
+ float CampoVectorial::calcularIntensidad(float *posicion)
+ {
+ }
 
-float *CampoVectorial::calcularDireccion(float *posicion)
-{
-}
+ float *CampoVectorial::calcularDireccion(float *posicion)
+ {
+ }
 
 string CampoVectorial::getNombre()
 {

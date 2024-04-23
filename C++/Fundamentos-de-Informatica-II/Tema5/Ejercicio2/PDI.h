@@ -2,20 +2,25 @@
 #include "Investigador.h"
 #include "Profesor.h"
 
-class PDI: virtual private Investigador, virtual public Profesor{
-private:
-Investigador investigador;
+class PDI : public Profesor, private Investigador
+{
 
 public:
-    PDI();
-    PDI(int id, string nombre, int edad, string institucionP, int anyioProf, string institucionInv, int anyioInv);
-    int identificador;
-    double getMediaAnnyiosExperiencia();
-    void actualizacionInstitucion(string inst);
-    virtual string toString();
-    void getAreaDocencia();
-    bool elMasVeterano(PDI *objPDI);
-    PDI(const Profesor& otro);
-    PDI& operator=(const Profesor& otro);
+    PDI() = default;
+    PDI(string DNI, string m_Nombre, string apellidos, int edad, string institucionProfesor, int anyioInicioProfesor, int orcid, string areaConocimiento, string institucionInvestigador, int anyioInicioInvestigador, int identificador);
+    
+    //PDI(const Profesor& otro);
+    //PDI& operator=(const Profesor& otro);
 
-};  
+    double getMediaAnyiosExperiencia() const;
+    void actualizacionInstitucion(string inst);
+    string getAreaDocencia();
+    bool elMasVeterano(PDI* objPDI) const;
+    virtual string toString() const;
+
+private:
+    Investigador m_Investigador;
+public:
+    int m_Identificador;
+};
+

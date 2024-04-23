@@ -1,27 +1,28 @@
 #pragma once
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct datosPersonales {
-    string dni;
-    string nombre;
+    string DNI;
+    string m_Nombre;
     string apellidos;
     int edad;
 };
 
-class Profesor{
+class Profesor {
 private:
-    datosPersonales datos;
-    int anyioInicio;
-
+    datosPersonales m_Datos;
+    int m_AnyioInicio;
 protected:
-    string institucion;
+    string m_Institucion;
 
 public:
-    Profesor(); 
-    Profesor(string dni, string nombre, string apellidos, int edad, string institucion);
-    virtual string getAreaDocencial();
-    int getAnyiosExperiencia();
-    virtual string toString();
-    
+    Profesor() = default;
+    Profesor(string DNI, string m_Nombre, string apellidos, int edad, string institucion, int anyioInicio);
+
+    virtual string getAreaDocencia() = 0;
+    int getAnyosExperiencia() const;
+    virtual string toString() const;
+
 };

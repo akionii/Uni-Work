@@ -1,17 +1,19 @@
 #include "Profesor.h"
 
-Profesor::Profesor(string dni, string nombre, string apellidos, int edad, string institucion) :
-datos{dni, nombre, apellidos, edad}, institucion(institucion){
+Profesor::Profesor(string DNI, string m_Nombre, string apellidos, int edad, string institucion, int anyioInicio) 
+    : m_Datos{ DNI, m_Nombre, apellidos, edad }, 
+      m_Institucion{ institucion }, 
+      m_AnyioInicio{ anyioInicio } {;
 }
 
-int Profesor::getAnyiosExperiencia(){
-    int anyioActual = 2024;
-    return anyioActual - anyioInicio;
+int Profesor::getAnyosExperiencia() const
+{
+    return 2024 - m_AnyioInicio;
 }
 
-string Profesor::toString(){
-    string salida = "Dni: " + datos.dni + ", nombre: " + datos.nombre + 
-    ", apellidos " + datos.apellidos + " edad: " + to_string(datos.edad) +
-    " pertenece a " + institucion;
-    return salida;
+string Profesor::toString() const 
+{
+    return "DNI: " + m_Datos.DNI + " | Nombre: " + m_Datos.m_Nombre +
+        " | Apellidos " + m_Datos.apellidos + " | Edad: " + to_string(m_Datos.edad) +
+        "\nInstitucion: " + m_Institucion + " | Inicio: " + to_string(m_AnyioInicio);
 }

@@ -1,26 +1,40 @@
 #include "Investigador.h"
 
-Investigador::Investigador(int orcid, int anyioInicio, string areaConocimiento, string institucion): orcid(orcid), anyioInicio(anyioInicio), areaConocimiento(areaConocimiento), institucion(institucion){
+Investigador::Investigador(int ORCID, string m_AreaConocimiento, string m_Institucion, int m_AnyioInicio)
+    : m_ORCID{ ORCID }, 
+      m_AreaConocimiento{ m_AreaConocimiento }, 
+      m_Institucion{ m_Institucion },
+      m_AnyioInicio{ m_AnyioInicio }
+{}
 
+Investigador::Investigador(const Investigador& otro)
+{
+    //....
 }
 
-int Investigador:: getAnyosExperiencia(){
-    int anyioActual = 2024;
-    return anyioActual - anyioInicio;
-
-}
-
-string Investigador::toString(){
-    string salida = "El código es: " + to_string(orcid) + ", empezó en el anyio " + to_string(anyioInicio) + 
-  ", su area es " + areaConocimiento + " y su institucion " + institucion;
-    return salida;
-} 
-
-Investigador Investigador::operator=(const Investigador& otro){
-    this->orcid = otro.orcid;
-    this->anyioInicio = otro.anyioInicio;
-    this->areaConocimiento = otro.areaConocimiento;
-    this->institucion = otro.institucion;
+Investigador Investigador::operator=(const Investigador& otro) 
+{
+    m_ORCID = otro.m_ORCID;
+    m_AnyioInicio = otro.m_AnyioInicio;
+    m_AreaConocimiento = otro.m_AreaConocimiento;
+    m_Institucion = otro.m_Institucion;
 
     return *this;
 }
+
+string Investigador::getAreaInvestigacion() const
+{
+    return m_AreaConocimiento;
+}
+
+int Investigador::getAnyosExperiencia() const
+{
+    return 2024 - m_AnyioInicio;
+}
+
+string Investigador::toString() const
+{
+    return "Institucion: " + m_Institucion + " | Inicio: " + to_string(m_AnyioInicio) + " | ORCID: " + to_string(m_ORCID) + " | Area De Investigacion: " + m_AreaConocimiento;
+}
+
+
