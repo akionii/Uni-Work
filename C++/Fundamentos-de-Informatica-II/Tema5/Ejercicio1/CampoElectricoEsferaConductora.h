@@ -1,7 +1,7 @@
 #pragma once
 #include "CampoElectrico.h"
 
-class CampoElectricoEsferaConductora : public CampoElectrico
+class CampoElectricoEsferaConductora : virtual public CampoElectrico
 {
 private:
     float radio_esfera;
