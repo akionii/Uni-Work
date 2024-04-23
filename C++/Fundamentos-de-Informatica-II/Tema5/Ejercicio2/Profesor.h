@@ -20,7 +20,7 @@ protected:
 public:
     Profesor(); 
     Profesor(string dni, string nombre, string apellidos, int edad, string institucion);
-    virtual string getAreaDocencial() = 0;
+    virtual string getAreaDocencial();
     int getAnyiosExperiencia();
     virtual string toString();
     

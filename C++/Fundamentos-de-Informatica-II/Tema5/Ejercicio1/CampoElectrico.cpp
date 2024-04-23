@@ -1,7 +1,4 @@
 #include "CampoElectrico.h"
-#include <cmath>
-#include <limits>
-
 float CampoElectrico::epsilon = 1;
 
 CampoElectrico::CampoElectrico()
@@ -9,7 +6,6 @@ CampoElectrico::CampoElectrico()
     carga = 2.0;
     posicion[0] = 1;
     posicion[1] = 1;
-    nombre = "CampoElectrico0";
 }
 
 CampoElectrico::CampoElectrico(float carga, float *posicion, string nombre)
@@ -22,7 +18,7 @@ CampoElectrico::CampoElectrico(float carga, float *posicion, string nombre)
 
 float CampoElectrico::calcularIntensidad(float *posicion)
 {
-    float k = 1 / (4 * M_PI * epsilon);
+    float k = 1 / (4 * 3.1416 * epsilon);
     float dx = this->posicion[0] - posicion[0];
     float dy = this->posicion[1] - posicion[1];
     float distancia = sqrt(dx * dx + dy * dy);
@@ -32,13 +28,10 @@ float CampoElectrico::calcularIntensidad(float *posicion)
 
 float *CampoElectrico::calcularDireccion(float *posicion)
 {
-    static float direccion[2];
-    float dx = posicion[0] - this->posicion[0];
-    float dy = posicion[1] - this->posicion[1];
-    float distancia = sqrt(dx * dx + dy * dy);
-
-    direccion[0] = dx / distancia;
-    direccion[1] = dy / distancia;
+    float *direccion = new float[2];
+    float distancia = dist(this->posicion, posicion);
+    direccion[0] = (posicion - this->posicion) / distancia; // eje x
+    direccion[1] = (posicion - this->posicion) / distancia; // eje y
 
     return direccion;
 }
@@ -55,5 +48,5 @@ void CampoElectrico::setCarga(float carga)
 
 string CampoElectrico::toString()
 {
-    return "Campo eléctrico: " + nombre + ", carga: " + to_string(carga) + ", posición: (" + to_string(posicion[0]) + ", " + to_string(posicion[1]) + ")";
+    return "Campo electrico: " + nombre + ", carga: " + to_string(carga) + ", posicion: (" + to_string(posicion[0]) + ", " + to_string(posicion[1]) + ")";
 }
