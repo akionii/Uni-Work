@@ -4,6 +4,7 @@ using namespace std;
 
 //COMO PICAAA
 //Me gustan los COCOs
+//AminoAcidos
 
 int main(){
     int integral = 1;
