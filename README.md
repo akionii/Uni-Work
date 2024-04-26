@@ -48,3 +48,5 @@ PHP scripts related to web development coursework.
 ### Python
 
 Python scripts and projects.
+
+https://youtube.com/clip/UgkxETafV7ImIh3XJXKF_0oZlC8CPHGRcdqg?si=KO0cJrYKU4KrwZPJ
