@@ -49,4 +49,7 @@ PHP scripts related to web development coursework.
 
 Python scripts and projects.
 
+Enlaces del nene:
+
 https://youtube.com/clip/UgkxETafV7ImIh3XJXKF_0oZlC8CPHGRcdqg?si=KO0cJrYKU4KrwZPJ
+https://youtu.be/SChnJDfmrSU?si=ZpL3FSfmKKtDFmSQ&t=19131
