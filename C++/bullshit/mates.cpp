@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//COMO PICAAA
+
 int main(){
     int integral = 1;
     
