@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #050505; /* Darker background for the body */
+  color: #c0c0c0; /* Light text color for readability */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.badge-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.badge-container img {
+  margin-right: 10px;
+}
+
+.badge-container a {
+  text-decoration: none;
+}
+
+.project-description {
+  background-color: #121212; /* Darker background for sections */
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ensuring text is visible */
+}
+
+.country-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff; /* Light text color for table */
+}
+
+.country-table th,
+.country-table td {
+  padding: 10px;
+  border: 1px solid #333333;
+  text-align: left;
+  background-color: #0d0d0d; /* Dark background for table cells */
+}
+
+.country-table th {
+  background-color: #080808; /* Even darker background for headers */
+}
+
+a {
+  color: #3ea6ff; /* Light blue color for links for better visibility */
+}

@@ -1,0 +1,24 @@
+{
+  "name": "uni-work",
+  "version": "1.0.0",
+  "description": "A repository containing projects and exercises for university courses in software engineering.",
+  "scripts": {
+    "prettier": "prettier --write .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akionii/uni-work.git"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/akionii/uni-work/issues"
+  },
+  "homepage": "https://github.com/akionii/uni-work#readme"
+}
