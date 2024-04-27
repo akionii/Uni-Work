@@ -12,10 +12,10 @@
 
 </center>
 
-<a href="https://github.com/akionii/Uni-Work/tree/master/C%2B%2B"><img src="https://img.shields.io/badge/C++-%23007acc.svg?style=for-the-badge&logo=c%2B%2B&logoColor=%23ffffff"/></a>
-<a href="https://github.com/akionii/Uni-Work/tree/master/C"><img src="https://img.shields.io/badge/C-%2320232a.svg?style=for-the-badge&logo=c&logoColor=%2361DAFB"/></a>
-<a href="https://github.com/akionii/Uni-Work/tree/master/php"><img src="https://img.shields.io/badge/PHP-%239269fe.svg?style=for-the-badge&logo=php&logoColor=yellow&border"/></a>
-<a href="https://github.com/akionii/Uni-Work/tree/master/python"><img src="https://img.shields.io/badge/Python-742b66.svg?style=for-the-badge&logo=python&logoColor=#e682d5"/></a>
+<a href="https://github.com/akionii/Uni-Work/tree/master/code/C%2B%2B"><img src="https://img.shields.io/badge/C++-%23007acc.svg?style=for-the-badge&logo=c%2B%2B&logoColor=%23ffffff"/></a>
+<a href="https://github.com/akionii/Uni-Work/tree/master/code/C"><img src="https://img.shields.io/badge/C-%2320232a.svg?style=for-the-badge&logo=c&logoColor=%2361DAFB"/></a>
+<a href="https://github.com/akionii/Uni-Work/tree/master/code/php"><img src="https://img.shields.io/badge/PHP-%239269fe.svg?style=for-the-badge&logo=php&logoColor=yellow&border"/></a>
+<a href="https://github.com/akionii/Uni-Work/tree/master/code/python"><img src="https://img.shields.io/badge/Python-742b66.svg?style=for-the-badge&logo=python&logoColor=#e682d5"/></a>
 
 > [!CAUTION]
 > ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
