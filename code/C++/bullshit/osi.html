@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOCOLATE</title>
+    <style>
+        #texto {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 45%;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id = "texto">PANDEPIPAS</div>
+    <script>
+        var textoDiv = document.getElementById("texto");
+        function colorAleatorio(){
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+        } 
+        function cambiarColor(){
+            textoDiv.style.color = colorAleatorio();
+        }
+        setInterval(cambiarColor,100)
+    </script>
+</body>
+</html>
