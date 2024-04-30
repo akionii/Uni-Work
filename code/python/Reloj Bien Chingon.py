@@ -26,6 +26,7 @@ def FechaHora():
     ventana.after(1000,FechaHora)
 
 ventana = tk.Tk()
+
 ventana.title("RELOJASO")
 
 Reloj = tk.Label(ventana, font=('Roman' , 40 , 'bold'), bg = 'White')
