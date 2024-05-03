@@ -2,21 +2,21 @@
 
 using namespace std;
 
-template <typename T, typename U > void encontrarDirecciones(T& obj1, U& obj2, T** dir1, U** dir2) {
-    *dir1 = &obj1;
-    *dir2 = &obj2;
+template <typename T, typename U > void obtenerDirecciones(T& var1, U& var2, T** ptr1, U** ptr2) {
+    *ptr1 = &var1;
+    *ptr2 = &var2;
 }
 
 int main() {
-    int n1 = 21;
-    float n2 = 64;
-    int* direccion1 = 0;
-    float* direccion2 = 0;
+    int entero = 16;
+    float decimal = 32;
+    int* ptrEntero = nullptr;
+    float* ptrDecimal = nullptr;
 
-    encontrarDirecciones(n1, n2, &direccion1, &direccion2);
+    obtenerDirecciones(entero, decimal, &ptrEntero, &ptrDecimal);
 
-    cout << "direccion de numero 1: " << direccion1 << endl;
-    cout << "direccion de numero 2: " << direccion2 << endl;
+    cout << "Dirección del entero: " << ptrEntero << endl;
+    cout << "Dirección del decimal: " << ptrDecimal << endl;
 
     return 0;
 }

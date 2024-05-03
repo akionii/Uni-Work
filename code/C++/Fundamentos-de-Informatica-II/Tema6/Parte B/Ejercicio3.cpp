@@ -1,37 +1,43 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-template <typename T> T varianzaElementos(T a[], T media , int n){
-    int suma = 0, cuadrados = 0;
-    for(int i = 0; i < n; i++){
-        suma += a[i];
-        cuadrados += a[i]*a[i];
+template <typename T>
+T calcularVarianza(T elementos[], T promedio, int tam)
+{
+    T sumaElementos = 0, sumaCuadrados = 0;
+    for (int i = 0; i < tam; i++)
+    {
+        sumaElementos += elementos[i];
+        sumaCuadrados += elementos[i] * elementos[i];
     }
-    int varianza = (cuadrados/n) - (media*media);
+    T varianza = (sumaCuadrados / tam) - (promedio * promedio);
     return varianza;
 }
 
-int main() {
-    const int N = 7;
-    int a[N];
+int main()
+{
+    const int TAMANIO = 5;
+    int numeros[TAMANIO];
 
-    cout << "Introduzca " << N << " numeros: ";
-    for (int i = 0; i < N; i++) {
-        cin >> a[i];    
+    cout << "Ingrese " << TAMANIO << " números: ";
+    for (int i = 0; i < TAMANIO; i++)
+    {
+        cin >> numeros[i];
     }
 
-    int suma = 0;
-    for (int i = 0; i < N; i++) {
-        suma += a[i];
+    int sumaTotal = 0;
+    for (int i = 0; i < TAMANIO; i++)
+    {
+        sumaTotal += numeros[i];
     }
-   
-    int varianza, media;
-    
-    media = suma/N;
-    varianza = varianzaElementos(a, media, N);
 
-    cout << "La varianza es: " << varianza << endl;
+    int varianzaCalculada, promedio;
+
+    promedio = sumaTotal / TAMANIO;
+    varianzaCalculada = calcularVarianza(numeros, promedio, TAMANIO);
+
+    cout << "La varianza calculada es: " << varianzaCalculada << endl;
 
     return 0;
 }

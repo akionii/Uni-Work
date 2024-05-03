@@ -1,40 +1,42 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-template<typename T> void intercambio(T& a, T& b) {
-    T temp = a;
-    a = b;
-    b = temp;
+template <typename T>
+void swapValues(T &first, T &second)
+{
+    T temp = first;
+    first = second;
+    second = temp;
 }
 
-class Vector2D {
-    public:
-        float x;
-        float y;
+class Vector2D
+{
+public:
+    float x;
+    float y;
 
-        Vector2D() : x(0), y(0) {}
-        Vector2D(float valorX, float valorY) : x(valorX), y(valorY) {}
-    };
+    Vector2D() : x(0), y(0) {}
+    Vector2D(float initialX, float initialY) : x(initialX), y(initialY) {}
+};
 
+int main()
+{
+    float num1 = 1.08, num2 = 3.14;
+    cout << "Antes del intercambio num1 = " << num1 << ", num2 = " << num2 << endl;
+    swapValues(num1, num2);
+    cout << "Después del intercambio: num1 = " << num1 << ", num2 = " << num2 << endl;
 
-int main() {
-   
-    float a = 1.08, b = 3.14;
-    cout << "sin intercambio a = " << a << ", b = " << b << endl;
-    intercambio(a, b);
-    cout << "intercambio: a = " << a << ", b = " << b << endl;
+    string text1 = "Hola", text2 = "Mundo";
+    cout << "Antes del intercambio text1 = " << text1 << ", text2 = " << text2 << endl;
+    swapValues(text1, text2);
+    cout << "Después del intercambio: text1 = " << text1 << ", text2 = " << text2 << endl;
 
-    string str1 = "Hola", str2 = "Mundo";
-    cout << "sin intercambio str1 = " << str1 << ", str2 = " << str2 << endl;
-    intercambio(str1, str2);
-    cout << "intercambio: str1 = " << str1 << ", str2 = " << str2 << endl;
-
-    Vector2D vec1(1, 2), vec2(3, 4);
-    cout << "sin intercambio: vec1 = (" << vec1.x << ", " << vec1.y << "), vec2 = (" << vec2.x << ", " << vec2.y << ")";
-    intercambio(vec1, vec2);
-    cout << "intercambio: vec1 = (" << vec1.x << ", " << vec1.y << "), vec2 = (" << vec2.x << ", " << vec2.y << ")";
+    Vector2D vector1(1, 2), vector2(3, 4);
+    cout << "Antes del intercambio: vector1 = (" << vector1.x << ", " << vector1.y << "), vector2 = (" << vector2.x << ", " << vector2.y << ")";
+    swapValues(vector1, vector2);
+    cout << "Después del intercambio: vector1 = (" << vector1.x << ", " << vector1.y << "), vector2 = (" << vector2.x << ", " << vector2.y << ")";
 
     return 0;
 }

@@ -1,32 +1,36 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-class Entero {
-    public:
-        static double factor_tolerancia;
+class NumeroEntero
+{
+public:
+    static double umbral;
 };
 
-class Flotante {
-    public:
-        static double factor_tolerancia;
+class NumeroDecimal
+{
+public:
+    static double umbral;
 };
 
-double Entero::factor_tolerancia = 0.5;
-double Flotante::factor_tolerancia = 0.5;
+double NumeroEntero::umbral = 0.5;
+double NumeroDecimal::umbral = 0.5;
 
-
-template <typename T> void imprimirFactorTolerancia() {
-    cout << "El doble del factor de tolerancia es: " << 2 * T::factor_tolerancia << endl;
-    cout << "La mitad del factor de tolerancia es: " << 0.5 * T::factor_tolerancia << endl;
+template <typename T>
+void mostrarUmbrales()
+{
+    cout << "Doble del umbral: " << 2 * T::umbral << endl;
+    cout << "Mitad del umbral: " << 0.5 * T::umbral << endl;
 }
 
-int main() {
-    cout << "Para la clase Entero:" << endl;
-    imprimirFactorTolerancia<Entero>();
+int main()
+{
+    cout << "Para NumeroEntero:" << endl;
+    mostrarUmbrales<NumeroEntero>();
 
-    cout << "\nPara la clase Flotante:" << endl;
-    imprimirFactorTolerancia<Flotante>();
+    cout << "\nPara NumeroDecimal:" << endl;
+    mostrarUmbrales<NumeroDecimal>();
 
     return 0;
 }

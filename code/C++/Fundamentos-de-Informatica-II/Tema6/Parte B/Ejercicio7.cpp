@@ -1,32 +1,39 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-template < typename T> void imprimirToString(const T& objeto) {
-    cout << "Desde la funcion plantilla: " << objeto.toString() << endl;
+template <typename T>
+void mostrarCadena(const T &objeto)
+{
+    cout << "Representación del objeto: " << objeto.toString() << endl;
 }
 
-class A {
+class ClaseA
+{
 public:
-    string toString() const {
-        return "Objeto de la clase A";
+    string toString() const
+    {
+        return "Instancia de ClaseA";
     }
 };
 
-class B {
+class ClaseB
+{
 public:
-    string toString() const {
-        return "Objeto de la clase B";
+    string toString() const
+    {
+        return "Instancia de ClaseB";
     }
 };
 
-int main() {
-    A objetoA;
-    B objetoB;
+int main()
+{
+    ClaseA instanciaA;
+    ClaseB instanciaB;
 
-    imprimirToString(objetoA);
-    imprimirToString(objetoB);
+    mostrarCadena(instanciaA);
+    mostrarCadena(instanciaB);
 
     return 0;
 }
