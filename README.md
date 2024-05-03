@@ -17,7 +17,7 @@
 <a href="/code/php"><img src="https://img.shields.io/badge/PHP-%239269fe.svg?style=for-the-badge&logo=php&logoColor=yellow&border"/></a>
 <a href="/code/python"><img src="https://img.shields.io/badge/Python-742b66.svg?style=for-the-badge&logo=python&logoColor=#e682d5"/></a>
 
-> [!CAUTION]
+> [!Important]
 > ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
 
 | País    | Bandera | Enlace                                                                                    | Ciudad      | Población |
