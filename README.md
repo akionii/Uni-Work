@@ -1,16 +1,4 @@
-<a href="https://github.com/akionii/Uni-Work">
-<img src="https://img.shields.io/github/forks/akionii/Uni-Work?style=social" alt="fork"/>
-</a>
-<a href="https://github.com/akionii/Uni-Work">
-<img src="https://img.shields.io/github/stars/akionii/Uni-Work?style=social" alt="stars"/>
-
-<center>
-
 # Proyecto de Grado en Ingeniería de Software
-
-</a>
-
-</center>
 
 <a href="/code/C%2B%2B"><img src="https://img.shields.io/badge/C++-%23007acc.svg?style=for-the-badge&logo=c%2B%2B&logoColor=%23ffffff"/></a>
 <a href="/code/C"><img src="https://img.shields.io/badge/C-%2320232a.svg?style=for-the-badge&logo=c&logoColor=%2361DAFB"/></a>
@@ -18,7 +6,7 @@
 <a href="/code/python"><img src="https://img.shields.io/badge/Python-742b66.svg?style=for-the-badge&logo=python&logoColor=#e682d5"/></a>
 
 > [!Important]
-> ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
+> > > > > > > > > > > > > > ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
 
 | País    | Bandera | Enlace                                                                                    | Ciudad      | Población |
 | ------- | ------- | ----------------------------------------------------------------------------------------- | ----------- | --------- |
@@ -52,3 +40,11 @@ Una vez instalado Node.js, ya puedes instalr los paquetes necesarios para este p
    ```
 
    Este comando inicia Prettier, el cual revisará y formateará automáticamente los archivos de código según las reglas especificadas, asegurando que todos los contribuyentes mantengan un estilo coherente.
+
+---
+
+<a href="https://github.com/akionii/Uni-Work">
+<img src="https://img.shields.io/github/forks/akionii/Uni-Work?style=social" alt="fork"/>
+</a>
+<a href="https://github.com/akionii/Uni-Work">
+<img src="https://img.shields.io/github/stars/akionii/Uni-Work?style=social" alt="stars"/>
