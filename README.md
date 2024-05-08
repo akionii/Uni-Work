@@ -6,7 +6,7 @@
 <a href="/code/python"><img src="https://img.shields.io/badge/Python-742b66.svg?style=for-the-badge&logo=python&logoColor=#e682d5"/></a>
 
 > [!Important]
-> > > > > > > > > > > > > > ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
+> > ¡Bienvenido al repositorio de proyectos y trabajos de mi carrera de Ingeniería de Software! Aquí encontrarás una colección de proyectos, ejercicios y trabajos que he realizado a lo largo de mi formación.
 
 | País    | Bandera | Enlace                                                                                    | Ciudad      | Población |
 | ------- | ------- | ----------------------------------------------------------------------------------------- | ----------- | --------- |
