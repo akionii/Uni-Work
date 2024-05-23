@@ -1,56 +1,154 @@
-body {
-  font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #050505; /* Darker background for the body */
-  color: #c0c0c0; /* Light text color for readability */
+  box-sizing: border-box;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+/* Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #333;
   padding: 20px;
 }
 
-.badge-container {
+/* Header Styling */
+header {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.badge-container img {
-  margin-right: 10px;
-}
-
-.badge-container a {
-  text-decoration: none;
-}
-
-.project-description {
-  background-color: #121212; /* Darker background for sections */
   padding: 20px;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+header p {
+  color: #ddd;
+}
+
+/* Navigation Styling */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #4ca1af;
+}
+
+/* Main Section Styling */
+main {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+main p {
   margin-bottom: 20px;
-  color: #ffffff; /* Ensuring text is visible */
+  color: #ddd;
 }
 
-.country-table {
-  width: 100%;
-  border-collapse: collapse;
-  color: #ffffff; /* Light text color for table */
-}
-
-.country-table th,
-.country-table td {
+pre {
+  background: #333;
+  color: #fff;
   padding: 10px;
-  border: 1px solid #333333;
-  text-align: left;
-  background-color: #0d0d0d; /* Dark background for table cells */
+  border-radius: 5px;
+  overflow-x: auto;
 }
 
-.country-table th {
-  background-color: #080808; /* Even darker background for headers */
+code {
+  color: #4ca1af;
 }
 
-a {
-  color: #3ea6ff; /* Light blue color for links for better visibility */
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background: #4ca1af;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background: #2c3e50;
+}
+
+/* Media Styling */
+img,
+audio,
+video {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+img {
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+audio,
+video {
+  outline: none;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #ddd;
 }
